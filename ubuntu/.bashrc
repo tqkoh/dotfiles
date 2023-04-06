@@ -13,6 +13,7 @@ if [ -f ~/compro.sh ]; then
     source ~/compro.sh
 fi
 
+alias reb='exec $SHELL -l'
 alias clip='clip.exe'
 alias paste='powershell.exe /bin/paste.ps1'
 alias jikka='jikka.exe'
