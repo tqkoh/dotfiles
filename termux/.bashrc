@@ -1,6 +1,6 @@
 
 export REPOS=~/repos
-export SREPOS=/storage/shared/repos
+export SREPOS=~/storage/shared/repos
 
 if [ -f ~/compro.sh ]; then
     source ~/compro.sh
@@ -28,8 +28,9 @@ export CURL_CA_BUNDLE=/usr/local/share/curl/cacert.pem
 
 # export PS1="\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]$ "
 # export COMPRO=/mnt/c/Users/shktm/source/repos/vscode_compro/compro/
-export COMPRO=/repos/ac
+export COMPRO=~/repos/ac
 export TRASH=~/_trash
+
 export SAVE=~/_save
 
 
@@ -166,17 +167,11 @@ if ! shopt -oq posix; then
 fi
 
 
-# anyenv setting
-# export PATH=${PATH}:/mnt/c/Windows/system32:${HOME}/.anyenv/bin:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/usr/local/bin/:/usr/local/bin/docker-compose:/home/ubuntu/registry/volumes/certs
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
-# eval "$(anyenv init -)"
 
 
 export DOCKER_HOST='tcp://0.0.0.0:2375'
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
-. "$HOME/.cargo/env"
 
 [ -f "/home/tqk/.ghcup/env" ] && source "/home/tqk/.ghcup/env" # ghcup-env
