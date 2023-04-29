@@ -37,6 +37,8 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 
+export EDGEDEV="/mnt/c/Program Files (x86)/Microsoft/Edge Dev/Application/msedge.exe"
+
 export CLASSPATH=".:/usr/local/lib/antlr-4.10.1-complete.jar:$CLASSPATH"
 alias antlr4='java -jar /usr/local/lib/antlr-4.10.1-complete.jar'
 alias grun='java org.antlr.v4.gui.TestRig'
