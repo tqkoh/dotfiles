@@ -38,6 +38,10 @@ export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 
 export EDGEDEV="/mnt/c/Program Files (x86)/Microsoft/Edge Dev/Application/msedge.exe"
+export BROWSER="$EDGEDEV"
+function browse(){
+  "$BROWSER" $(wslpath -w $(realpath $1))
+}
 
 export CLASSPATH=".:/usr/local/lib/antlr-4.10.1-complete.jar:$CLASSPATH"
 alias antlr4='java -jar /usr/local/lib/antlr-4.10.1-complete.jar'
