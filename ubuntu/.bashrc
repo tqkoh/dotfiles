@@ -29,9 +29,7 @@ eval "$(gh completion -s bash)"
 
 export GPG_TTY=$(tty)
 
-# export GOROOT=/usr/local/go
-# export GOPATH=$HOME/go
-# export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export GOROOT=""
 # export JAVA_HOME=~/zulu-8 ---------------------minecraft
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 export PATH=$JAVA_HOME/bin:$PATH
